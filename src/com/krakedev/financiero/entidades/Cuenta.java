@@ -5,12 +5,23 @@ public class Cuenta {
 	private String id;
 	private double saldoActual;
 	private String tipo;
+	private Cliente propietario;
 	
 	public Cuenta(String id) {
 		this.id = id;
 		this.saldoActual = 0;
 		this.tipo = "A";
 	}
+	
+	public Cliente getPropietario() {
+		return propietario;
+	}
+
+
+	public void setPropietario(Cliente propietario) {
+		this.propietario = propietario;
+	}
+
 
 	public String getId() {
 		return id;
