@@ -36,4 +36,9 @@ public class Cuenta {
 		this.tipo = tipo;
 	}
 	
+	public void imprimir() {
+		System.out.println("********** CUENTA " + this.id + " **********");
+		System.out.println("Saldo Actual: " + this.saldoActual);
+		System.out.println("Tipo: " + this.tipo);
+	}
 }
