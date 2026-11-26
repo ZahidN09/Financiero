@@ -9,11 +9,14 @@ public class TestImprimir {
 		
 		Cuenta c1 = new Cuenta("007");
 		
-		c1.imprimir();
+		//c1.imprimir();
 		
 		Cliente cl1 = new Cliente("0400000089","Luis","Pozo");
 		
-		cl1.imprimir();
+		//cl1.imprimir();
+		
+		c1.setPropietario(cl1);
+		c1.imprimir();
 
 	}
 

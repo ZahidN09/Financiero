@@ -37,7 +37,7 @@ public class Cliente {
 	}
 	
 	public void imprimir() {
-		System.out.println("********************");
+		//System.out.println("********************");
 		System.out.println("Cédula: "+ this.cedula);
 		System.out.println("Nombre: "+ this.nombre);
 		System.out.println("Apellido: " + this.apellido);
