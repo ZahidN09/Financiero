@@ -6,6 +6,10 @@ public class Cliente {
 	private String nombre;
 	private String apellido;
 	
+	public Cliente() {
+		
+	}
+	
 	public Cliente(String cedula, String nombre, String apellido) {
 		this.cedula = cedula;
 		this.nombre = nombre;
@@ -37,7 +41,7 @@ public class Cliente {
 	}
 	
 	public void imprimir() {
-		//System.out.println("********************");
+		System.out.println("********************");
 		System.out.println("Cédula: "+ this.cedula);
 		System.out.println("Nombre: "+ this.nombre);
 		System.out.println("Apellido: " + this.apellido);

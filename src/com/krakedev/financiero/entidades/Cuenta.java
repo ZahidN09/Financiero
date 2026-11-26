@@ -11,7 +11,7 @@ public class Cuenta {
 		this.id = id;
 		this.saldoActual = 0;
 		this.tipo = "A";
-		this.propietario = null;
+		this.propietario = new Cliente();
 	}
 	
 	public Cliente getPropietario() {
@@ -50,7 +50,9 @@ public class Cuenta {
 	
 	public void imprimir() {
 		System.out.println("********** CUENTA " + this.id + " **********");
-		propietario.imprimir();
+		System.out.println("Cédula: "+ propietario.getCedula());
+		System.out.println("Nombre: "+ propietario.getNombre());
+		System.out.println("Apellido: " + propietario.getApellido());
 		System.out.println("Saldo Actual: " + this.saldoActual);
 		System.out.println("Tipo: " + this.tipo);
 	}
